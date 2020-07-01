@@ -62,7 +62,7 @@ public class Sorts {
   }
 
   /** swap a[i] and a[j]
-   *  pre: 0 < i, j < a.size
+   *  pre: 0 <= i, j < a.size
    *  post: values in a[i] and a[j] are swapped */
   public void swap(int[] a, int i, int j) {
     int tmp = a[i];

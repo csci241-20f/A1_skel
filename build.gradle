@@ -35,9 +35,9 @@ run {
 test {
 	testLogging {
 		showStandardStreams = true
+		exceptionFormat 'full'
 	}
 }
-
 
 // Define the main class for the application
 mainClassName = 'sort.SortsDriver'

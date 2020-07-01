@@ -5,6 +5,8 @@ import org.junit.FixMethodOrder;
 
 import java.util.Arrays;
 
+import org.junit.Rule;
+import org.junit.rules.Timeout;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
@@ -17,6 +19,8 @@ import java.util.ArrayList;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class SortsTest {
+  @Rule
+  public Timeout globalTimeout = Timeout.seconds(10); // 10 second timeout
 
   //////////////////////////////////////////
   // JUnit test cases for sorting methods //

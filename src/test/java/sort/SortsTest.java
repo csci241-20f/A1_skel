@@ -225,9 +225,9 @@ public class SortsTest {
     check(A, Aorig, 0, A.length);
   }
 
-  @Test
+  @Test /* contributed by Justin Holmes, Fall 2020 */
   public void test34Radix() {
-    int[] A = new int[]{-183, 4, -6, -8, -4, -6, 3, -7, -7};
+    int[] A = getRandomArray(200, 21);
     int[] Aorig = A.clone();
 
     Sorts s = new Sorts();
